@@ -1,4 +1,4 @@
-package com.rpuch.testcontainers.gremlinserver;
+package com.rpuch.moretestcontainers.gremlinserver;
 
 import org.apache.tinkerpop.gremlin.driver.remote.DriverRemoteConnection;
 import org.apache.tinkerpop.gremlin.process.remote.RemoteConnection;

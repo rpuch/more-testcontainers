@@ -1,4 +1,4 @@
-package com.rpuch.testcontainers.gremlinserver;
+package com.rpuch.moretestcontainers.gremlinserver;
 
 import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.containers.wait.strategy.Wait;
