@@ -20,7 +20,7 @@
     <groupId>com.rpuch.more-testcontainers</groupId>
     <artifactId>more-testcontainers-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>More testcontainers</name>
     <description>
@@ -231,7 +231,7 @@
         <url>https://github.com/rpuch/more-testcontainers</url>
         <connection>scm:git:git@github.com:rpuch/more-testcontainers.git</connection>
         <developerConnection>scm:git:git@github.com:rpuch/more-testcontainers.git</developerConnection>
-        <tag>more-testcontainers-parent-1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <licenses>
