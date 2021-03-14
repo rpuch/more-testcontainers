@@ -213,4 +213,11 @@
         </repository>
     </distributionManagement>
 
+    <scm>
+        <url>https://github.com/rpuch/more-testcontainers</url>
+        <connection>scm:git:git@github.com:rpuch/more-testcontainers.git</connection>
+        <developerConnection>scm:git:git@github.com:rpuch/more-testcontainers.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
 </project>
