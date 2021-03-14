@@ -8,6 +8,12 @@
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
+    <name>More testcontainers</name>
+    <description>
+        Testcontainers for gremlin-server and janusgraph
+    </description>
+    <url>https://github.com/rpuch/more-testcontainers</url>
+
     <modules>
         <module>gremlin-server</module>
         <module>janusgraph</module>
