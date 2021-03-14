@@ -10,6 +10,7 @@
 
     <modules>
         <module>gremlin-server</module>
+        <module>janusgraph</module>
     </modules>
 
     <properties>
