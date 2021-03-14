@@ -1,5 +1,8 @@
 package com.rpuch.moretestcontainers.gremlinserver;
 
+import org.apache.tinkerpop.gremlin.driver.Cluster;
+import org.apache.tinkerpop.gremlin.driver.remote.DriverRemoteConnection;
+import org.apache.tinkerpop.gremlin.process.remote.RemoteConnection;
 import org.testcontainers.containers.GenericContainer;
 import org.testcontainers.containers.wait.strategy.Wait;
 import org.testcontainers.utility.DockerImageName;
@@ -25,5 +28,15 @@ public class GremlinServerContainer extends GenericContainer<GremlinServerContai
 
     public int getMappedServerPort() {
         return getMappedPort(PORT);
+    }
+
+    public RemoteConnection openConnection() {
+        return DriverRemoteConnection.using(getContainerIpAddress(), getMappedServerPort());
+    }
+
+    public Cluster connectToCluster() {
+        return Cluster.build(getContainerIpAddress())
+                .port(getMappedServerPort())
+                .create();
     }
 }
