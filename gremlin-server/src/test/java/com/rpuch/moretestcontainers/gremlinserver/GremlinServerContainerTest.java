@@ -21,7 +21,7 @@ class GremlinServerContainerTest {
     @Test
     void containerStartsAndMakesGremlinServerAccessible() throws Exception {
         try (RemoteConnection connection = openConnection();
-                GraphTraversalSource g = openRemoteTraversalSoruce(connection)) {
+                GraphTraversalSource g = openRemoteTraversalSource(connection)) {
 
             long totalVertices = g.V().count().next();
 
@@ -33,7 +33,7 @@ class GremlinServerContainerTest {
         return DriverRemoteConnection.using(container.getContainerIpAddress(), container.getMappedServerPort());
     }
 
-    private GraphTraversalSource openRemoteTraversalSoruce(RemoteConnection connection) {
+    private GraphTraversalSource openRemoteTraversalSource(RemoteConnection connection) {
         return AnonymousTraversalSource.traversal().withRemote(connection);
     }
 }
