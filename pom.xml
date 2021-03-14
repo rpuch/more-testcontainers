@@ -242,4 +242,11 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Roman Puchkovskiy</name>
+            <email>roman.puchkovskiy@gmail.com</email>
+        </developer>
+    </developers>
+
 </project>
